@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Store</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1><%= link_to "Awesome Store", products_path %></a></h1>
+      </li>
+    </ul>
+    <section class="top-bar-section">
+      <ul class="right">
+        <li class="divider"></li>
+        <li><%= link_to "Browse Products", products_path %></li>
+        <li class="divider"></li>
+        <li><%= link_to "Price List" %></li>
+        <li class="divider"></li>
+        <li><%= link_to "Contact Us" %></li>
+        <li class="divider"></li>
+        <li><%= link_to "Cart" %></li>
+      </ul>
+    </section>
+  </nav>
+  <div class="row">
+    <div class="small-8 columns">
+      <%= yield %>
+    </div>
+    <div class="small-4 columns">
+      <h2 class="subheader">About Us</h2>
+      Single-origin coffee flannel hella delectus et master cleanse. Locavore Kickstarter cardigan, Banksy excepteur officia pug wayfarers proident put a bird on it Odd Future Vice nisi pickled. YOLO excepteur squid sint tousled cliche, scenester officia Vice. Excepteur Echo Park enim, occaecat nihil gentrify try-hard put a bird on it lomo Carles. Whatever odio proident, slow-carb gentrify narwhal locavore pork belly excepteur sed Vice flexitarian Shoreditch tattooed. Consectetur lomo +1 bespoke. Church-key cornhole excepteur cred aliqua.
+    </div>
+  </div>
+
+
+</body>
+</html>
